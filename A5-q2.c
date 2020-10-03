@@ -1,4 +1,4 @@
-//Solve a polynomial using Laguerre's method
+//Solve a polynomial using Laguerre's method and Synthetic Division of the polynomials
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +8,7 @@
 void main()
 {
     int n;
-    printf("Solving polynomial using the laguerre method:-\n\n");
+    printf("Solving polynomial using the laguerre method and synthetic division:-\n\n");
     printf("Please enter the order of the polynomial:\t");
     scanf("%d", &n);
 
@@ -48,3 +48,34 @@ void main()
 
     printf("Root %d is : %lf\n", n, c);
 }
+
+
+
+
+
+
+
+/*
+*********************************************OUTPUT****************************************************
+Solving polynomial using the laguerre method and synthetic division:-
+
+Please enter the order of the polynomial:       4
+
+Please enter the coefficients of the polynomial in decreasing power of x:
+1
+-3
+-7
+27
+-18
+
+Given polynomial is:
+P(x) = (1.000000 x^4) + (-3.000000 x^3) + (-7.000000 x^2) + (27.000000 x^1) + (-18.000000 x^0)
+
+Using Laguerre method:
+The initial guess of root: 5.5
+1st Root is:3.000000
+Root 2 is : 2.000000
+Root 3 is : 1.000000
+Root 4 is : -3.000000
+**********************************************************************************************************
+*/
